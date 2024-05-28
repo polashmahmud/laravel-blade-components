@@ -8,7 +8,7 @@
     <title>Laravel Blade Components</title>
     @vite('resources/css/app.css')
 </head>
-<body>
+<body class="bg-white">
 {{ $slot }}
 </body>
 </html>
