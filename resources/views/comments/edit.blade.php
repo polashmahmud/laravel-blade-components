@@ -3,7 +3,6 @@
         <x-form
             method="PATCH"
             action="{{ route('comments.update', $comment) }}"
-            class="bg-red-600"
         >
 
             <div class="space-y-12">
@@ -26,5 +25,18 @@
                 </button>
             </div>
         </x-form>
+
+        <x-form-button method="DELETE" action="{{ route('comments.destroy', $comment) }}">
+            Delete
+        </x-form-button>
+
+{{--        <x-form method="DELETE" action="{{ route('comments.destroy', $comment) }}">--}}
+{{--            <div>--}}
+{{--                <button type="submit"--}}
+{{--                        class="rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">--}}
+{{--                    Delete--}}
+{{--                </button>--}}
+{{--            </div>--}}
+{{--        </x-form>--}}
     </div>
 </x-app>

@@ -10,3 +10,4 @@ Route::get('/', function () {
 Route::get('/comments', [CommentController::class, 'index'])->name('comments.index');
 Route::get('/comments/{comment}/edit', [CommentController::class, 'edit'])->name('comments.edit');
 Route::patch('/comments/{comment}', [CommentController::class, 'update'])->name('comments.update');
+Route::delete('/comments/{comment}', [CommentController::class, 'destroy'])->name('comments.destroy');
