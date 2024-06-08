@@ -1,12 +1,13 @@
 <x-app>
-    <x-flash type="warning">
-        Whoops, sorry about that!
-    </x-flash>
+    <x-model
+        title="Deactivate account"
+        submit-label="Deactivate"
+    >
+        <x-slot name="trigger">
+            <button @click="on = true">Show Modal</button>
+        </x-slot>
 
-    <br>
-
-    <x-flash class="mt-10" data-flash="something...">
-        Greet job!
-    </x-flash>
-
+        Are you sure you want to deactivate your account? All
+        of your data will be permanently removed. This action cannot be undone.
+    </x-model>
 </x-app>
