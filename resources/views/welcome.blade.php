@@ -1,13 +1,15 @@
 <x-app>
-    <x-model
-        title="Deactivate account"
-        submit-label="Deactivate"
-    >
-        <x-slot name="trigger">
-            <button @click="on = true">Show Modal</button>
-        </x-slot>
+    <x-section>
+        <div class="">
+            <x-dropdown>
+                <x-slot name="trigger">
+                    <button>Click me!</button>
+                </x-slot>
 
-        Are you sure you want to deactivate your account? All
-        of your data will be permanently removed. This action cannot be undone.
-    </x-model>
+                <x-dropdown-link href="/">One</x-dropdown-link>
+                <x-dropdown-link href="/">Two</x-dropdown-link>
+                <x-dropdown-link href="/">Three</x-dropdown-link>
+            </x-dropdown>
+        </div>
+    </x-section>
 </x-app>

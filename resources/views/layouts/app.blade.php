@@ -9,7 +9,7 @@
     <script src="//unpkg.com/alpinejs" defer></script>
     @vite('resources/css/app.css')
 </head>
-<body class="bg-gray-300">
+<body class="bg-gray-100">
 {{ $slot }}
 </body>
 </html>
